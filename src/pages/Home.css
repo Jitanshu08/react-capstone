@@ -1,0 +1,71 @@
+/* home.css */
+.container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.image-container,
+.form-container {
+  flex: 1; /* Each will take up 50% of the container's width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Needed for positioning overlay-text */
+  overflow: hidden; /* Prevent content overflow */
+  height: 100vh;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px; /* Position the text slightly above the bottom */
+  z-index: 1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 55px; /* Adjust font size as needed */
+}
+
+.form-container {
+  background-color: black;
+  color: white; /* Ensure text is visible on a black background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%; /* Adjust as needed */
+  max-width: 400px; /* Add max-width to ensure form does not grow too large */
+  margin: 0 auto; /* Center the form */
+}
+
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px; /* Space between title and form */
+  color: rgba(114, 219, 115, 1);
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 20px; /* Space between subtitle and form fields */
+  text-align: center;
+  font-size: 1.2em; /* Adjust font size as needed */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em; /* Adjust font size as needed */
+}
+

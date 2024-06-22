@@ -7,6 +7,7 @@ import Info from "./pages/Info.jsx";
 import Browse from "./pages/Browse.jsx";
 import Selection from "./pages/MovieSelection.jsx";
 import NotFound from "./pages/404.jsx";
+import "./main.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -16,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/info" element={<Info />} />
         <Route path="/movieSelection" element={<Selection />} />
         <Route path="/browse" element={<Browse />} />
-        <Route path="*" element={<NotFound/>}/>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

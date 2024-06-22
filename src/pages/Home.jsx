@@ -85,7 +85,7 @@ export default function Home() {
   `}
       </style>
       <div className="image-container" style={{ position: "relative" }}>
-        <img src="src\assets\images\image 13.png" alt="" />
+        <img src="public\static\images\image 13.png" alt="" />
         <div className="overlay-text">Discover new things on Superapp</div>
       </div>
       <div className="form-container">

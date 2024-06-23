@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
+import "/static/images/home.png";
 
 export default function Home() {
   const [data, setData] = useState({
@@ -85,7 +86,7 @@ export default function Home() {
   `}
       </style>
       <div className="image-container" style={{ position: "relative" }}>
-        <img src="public\static\images\home.png" alt="" />
+        <img src="/static/images/home.png" alt="" />
         <div className="overlay-text">Discover new things on Superapp</div>
       </div>
       <div className="form-container">

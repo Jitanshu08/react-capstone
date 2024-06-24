@@ -9,10 +9,10 @@ const MOVIES = [
   { id: 2, movie: "Romance" },
   { id: 3, movie: "Thriller" },
   { id: 4, movie: "Horror" },
-  { id: 5, movie: "Western" },
+  { id: 5, movie: "Mystery" },
   { id: 6, movie: "Fantasy" },
-  { id: 7, movie: "Fiction" },
-  { id: 8, movie: "Musical" },
+  { id: 7, movie: "Science Fiction" },
+  { id: 8, movie: "Music" },
 ];
 
 export default function Selection() {

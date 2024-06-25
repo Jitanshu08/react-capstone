@@ -16,7 +16,7 @@ export default function Info() {
           data.articles[Math.floor((Math.random() * data.articles.length) | 1)]
         )
       )
-      .catch("error getting the news");
+      .catch(error => console.error('Error fetching data:', error));
   }, []);
   console.log(news);
   return (

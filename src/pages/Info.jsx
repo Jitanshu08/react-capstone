@@ -15,7 +15,8 @@ export default function Info() {
         setNews(
           data.articles[Math.floor((Math.random() * data.articles.length) | 1)]
         )
-      );
+      )
+      .catch("error getting the news");
   }, []);
   console.log(news);
   return (
@@ -77,7 +78,7 @@ export default function Info() {
           />
           <p>{news.title}</p>
           <p>{news.description}</p>
-          <p>{news.content.split('[')[0]}</p>
+          <p>{news.content.split("[")[0]}</p>
         </div>
       ) : (
         "No news"
